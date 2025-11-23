@@ -1,0 +1,15 @@
+package model;
+
+import lombok.Data;
+import newmaven.trylombok.*;
+
+@Data
+public class try01 {
+	public static void main(String[] args) {
+		trylombok user = new trylombok();
+		//user.setName("Hello Kitty");
+
+	}
+
+}
+

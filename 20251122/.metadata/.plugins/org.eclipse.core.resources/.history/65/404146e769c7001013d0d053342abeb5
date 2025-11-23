@@ -1,0 +1,17 @@
+package model;
+
+public class Acar {
+	
+private AcarEngine engine;
+	
+	public Acar(AcarEngine engine) {
+		this.engine = engine;
+	}
+
+	public void move() {
+		// ToyotaEngine engine = new ToyotaEngine();
+		engine.start();
+		
+		System.out.println("Toyota move!!");
+	}
+}

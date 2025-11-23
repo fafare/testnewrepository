@@ -1,0 +1,21 @@
+package model;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import Appconfig.Config;
+
+public class Javamain {
+	public static void main(String[] args) {
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(Config.class);
+
+		for (String name : ctx.getBeanDefinitionNames()) {
+			System.out.println(name);
+		}
+		
+
+		Acar car = ctx.getBean("toyota", Acar.class);
+		car.move();
+		
+	}
+
+}
