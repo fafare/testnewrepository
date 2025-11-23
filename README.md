@@ -1,9 +1,8 @@
 # testnewrepository
 text...
 
+test text001+-*/...
+
 
 
 finish
-
-123
-new text
